@@ -25,7 +25,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 13rem;
-  background: url("./images/pattern-bg.png") no-repeat;
+  background: url("./images/pattern-bg.png") no-repeat center center/cover;
 }
 
 #main .headTop h1 {
@@ -90,6 +90,10 @@ body {
   padding-left: 0;
 }
 
+#main .headTop .results div:last-child {
+  margin-right: 6rem;
+}
+
 #main .headTop .results div {
   padding-left: 25px;
   border-left: 1px solid #969696;
@@ -99,6 +103,7 @@ body {
 #main .headTop .results div h6 {
   color: #969696;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 #main .headTop .results div h3 {
