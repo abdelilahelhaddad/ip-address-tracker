@@ -12,4 +12,101 @@ body {
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
 }
+
+#main .headTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 13rem;
+  background: url("./images/pattern-bg.png") no-repeat;
+}
+
+#main .headTop h1 {
+  color: #FFF;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+#main .headTop .search {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main .headTop .search input {
+  width: 30rem;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 10px 0 0 10px;
+}
+
+#main .headTop .search input::-webkit-input-placeholder {
+  font-size: 14px;
+}
+
+#main .headTop .search input:-ms-input-placeholder {
+  font-size: 14px;
+}
+
+#main .headTop .search input::-ms-input-placeholder {
+  font-size: 14px;
+}
+
+#main .headTop .search input::placeholder {
+  font-size: 14px;
+}
+
+#main .headTop .search .arrow {
+  background: #000;
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0 10px 10px 0;
+}
+
+#main .headTop .results {
+  width: 80%;
+  background: #FFF;
+  border-radius: 10px;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#main .headTop .results div:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+
+#main .headTop .results div {
+  padding-left: 25px;
+  border-left: 1px solid #969696;
+  margin: 2rem;
+}
+
+#main .headTop .results div h6 {
+  color: #969696;
+  text-transform: uppercase;
+}
+
+#main .headTop .results div h3 {
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+#main .map {
+  height: 200px;
+}
 /*# sourceMappingURL=style.css.map */
