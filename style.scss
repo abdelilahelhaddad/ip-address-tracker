@@ -63,6 +63,7 @@ body {
       margin-top: 2rem;
       display: flex;
       justify-content: space-between;
+      z-index: 999;
 
       div:first-child {
         border-left: none;
@@ -92,7 +93,7 @@ body {
     }
   }
 
-  .map {
-    height: 200px;
+  #map {
+    height: calc(100vh - 13rem);
   }
 }

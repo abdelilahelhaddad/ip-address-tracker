@@ -83,6 +83,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 999;
 }
 
 #main .headTop .results div:first-child {
@@ -111,7 +112,7 @@ body {
   margin-top: 0.5rem;
 }
 
-#main .map {
-  height: 200px;
+#main #map {
+  height: calc(100vh - 13rem);
 }
 /*# sourceMappingURL=style.css.map */
