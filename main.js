@@ -1,4 +1,9 @@
-const geolocation = new Geolocation('8.8.8.8');
+let myIP = "";
+fetch("https://api.ipify.org/?format=json")
+  .then(res => res.json())
+  .then(data => myIP = data.ip);
+
+const geolocation = new Geolocation(myIP);
 const ui = new UI();
 
 document.addEventListener('DOMContentLoaded', getGeolocation);
