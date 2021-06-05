@@ -8,7 +8,7 @@ class UI {
 
   displayGeo(geo) {
     this.getIp.textContent = geo.ip;
-    this.getLocation.textContent = geo.location.city + " " + geo.location.region + " " + eo.location.postalCode;
+    this.getLocation.textContent = geo.location.city + " " + geo.location.region + " " + geo.location.postalCode;
     this.getTimezone.textContent = 'UTC' + geo.location.timezone;
     this.getIsp.textContent = geo.isp;
   }
