@@ -1,6 +1,6 @@
 class Geolocation {
   constructor(ip) {
-    this.apiKey = 'at_6z09DqZZYfNVzJKlvOJDzatwNS5CR';
+    this.apiKey = 'YOUR_API_KEY';
     this.ip = ip;
   }
 
