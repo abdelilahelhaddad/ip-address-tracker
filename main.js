@@ -31,42 +31,22 @@ const getLatt =
   geolocation.getGeolocation()
   .then(results => {
     return results.location.lat;
+  }).then(latt => {
+    console.log(latt)
+    return latt
   })
-
-// const Latt = () => {
-//   getLatt.then((latt) => {
-//     return latt;
-//   });
-// };
-
-const Latt = async () => {
-  const a = await getLatt;
-  return a
-};
-
-const MyLat = Latt();
 
 const getLng =
   geolocation.getGeolocation()
   .then(results => {
-    return results.location.lng;
+    return results.location.lng
+  }).then(lng => {
+    console.log(lng)
+    return lng
   })
 
-// const Lng = () => {
-//   getLng.then((lng) => {
-//     return lng
-//   });
-// };
-
-const Lng = async () => {
-  const b = await getLng;
-  return b
-};
-
-const MyLng = Lng();
-
 //Setting up the map
-var map = L.map('map').setView([MyLat, MyLng], 13);
+var map = L.map('map').setView([getLatt, getLng], 13);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
   attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -81,6 +61,6 @@ var greenIcon = L.icon({
   iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
 });
 
-L.marker([MyLat, MyLng], {
+L.marker([getLatt, getLng], {
   icon: greenIcon
 }).addTo(map);
